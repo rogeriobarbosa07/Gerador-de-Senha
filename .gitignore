@@ -1,2 +1,4 @@
 env
 projeto_senha/__pycache__
+app_senha/__pycache__
+db.sqlite3
