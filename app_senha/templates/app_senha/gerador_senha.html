@@ -14,9 +14,9 @@
                         <div class="card-body">
                             <h2 class="card-title text-center mb-4">Gerador de Senha Aleatória</h2>
                             <div class="mb-3">
-                                <input type="text" id="senhaGerada" class="form-control form-control-lg text-center" readonly placeholder="Sua senha aparecerá aqui">
+                                <input type="text" id="senhaGerada" class="form-control form-control-lg text-center" readonly placeholder="{{ senha_gerada }}">
                             </div>
-                            <form action="post">
+                            <form method="post">
                                 <div class="d-grid gap-2">
                                     <input class="btn btn-primary btn-lg" type="submit" name="gerar-senha" value="Gerar senha"></input>
                                 </div>

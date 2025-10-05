@@ -19,8 +19,6 @@ def senha():
 
     return senha
 
-print(senha()) 
-
 # def senha_com_valor(valor):
 
 #     return
