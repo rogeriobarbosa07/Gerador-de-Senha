@@ -8,7 +8,12 @@ from django.views.decorators.csrf import csrf_exempt
 def gerador_senha(request):
     senha_gerada = ''
     if request.method == 'POST':
-        senha_gerada = senha()
+        quant_chars = int(request.POST.get('numero-caracteres'))
+
+        if quant_chars:
+            senha_gerada = senha(quant_chars)
+        else:
+            senha_gerada = senha()
 
     context = {
         'senha_gerada': senha_gerada,
